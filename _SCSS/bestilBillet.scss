@@ -1,0 +1,184 @@
+//bestil Billet Accordion
+#Main-background{
+    #top-text{
+        text-align: center;
+        padding-top: 50px;
+        h2{
+            font-size: 48px;
+            padding-bottom: 20px;
+        }
+        p{
+            padding-bottom: 30px;
+        }
+    }
+    
+    .Movie{
+        max-width: 1081px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        a{
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+        p{
+            color: white;
+        }
+    }
+    .hidden-msg{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: none;
+    }   
+    .flex-Movie{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #cfcfcf;
+    }
+    
+    .btn:active{
+        background-color: black;
+        color: white;
+    }
+    
+    .hidden-msg.active{
+        display: block;
+    }
+}
+
+
+
+
+
+//bestil billet betalning
+#Payment{
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    h2{
+        font-size: 3vw;
+        text-align: center;
+    }
+ 
+    figure{
+        display: flex;
+        max-width: 70vw;
+        margin: 0 auto;
+        padding-top: 100px;
+        gap: 100px;
+    }
+   
+    form{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 9fr 19;
+        grid-template-areas:
+        "Navn Navn Navn"
+        "Tlf Krtnr Krtnr"
+        "Email CVV Date"
+        "MainBtn MainBtn MainBtn"
+         ;
+         grid-gap: 5px;
+         width: 50%;
+         margin: 0 auto;
+         padding-bottom: 50px;
+    }
+ 
+    .Navn{
+        grid-area: Navn;
+ 
+        #name{
+            width: 33.1vw;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+ 
+        }
+    }
+    
+    .Tlf{
+        grid-area: Tlf;
+ 
+        #Telfnumber{
+            width: 12vw;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+ 
+        }
+    }
+    
+    .Krtnr{
+        grid-area: Krtnr;
+ 
+        #Kortnumber{
+            width: 20.7vw;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+ 
+        }
+    }
+    
+    .Email{
+        grid-area: Email;
+ 
+        #email{
+            width: 12vw;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+ 
+        }
+    }
+    
+    .CVV{
+        grid-area: CVV;
+ 
+        #CVVnumber{
+            width: 5.5vw;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+ 
+        }
+    }
+    
+    .Date{
+        grid-area: Date;
+ 
+        #dato{
+            width: 14.7vw;
+            margin-bottom: 90px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+        }
+    }
+ 
+    .MainBtn{
+        grid-area: MainBtn;
+ 
+        #SndBtn{
+            width: 33.1vw;
+            padding: 10px 20px;
+            border: 2px solid black;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    
+    }
+ 
+    #FlmImg{
+        height: 43vh;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+    }
+}
