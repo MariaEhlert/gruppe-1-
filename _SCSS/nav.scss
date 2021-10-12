@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$mainColor: #19323c;
+$secondaryColor: #5f021f;
+$highlightColor: #f2545b;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    inset: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+body{
+    margin: auto;
+    background: $mainColor;
+    main{
+        width: 80%;
+        margin: auto;
+    }
+    h2{
+        color: $highlightColor;
+        text-shadow: 2px 2px black;
+        font-size: 4vw;
+    }
+    h3{
+        color: $secondaryColor;
+        text-shadow: 2px 2px black;
+        font-size: 2.5vw;
+    }
+    h6{
+        color: white;
+        font-size: 1.7vw;
+    }
+    p{
+        color: white;
+        font-size: 1.5vw;
+    }
+    section{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    
+    svg{
+        width: 10%;
+        z-index: 4;
+        position: relative;
+        top: -41%;
+        path{
+            fill: white;
+        }
+    }
+    // NAV
+    .nav-main{
+        z-index: 5;
+        ul{               
+            display: flex;
+            justify-content: space-between;
+            li{               
+                display: inline-block; 
+                padding: 1.5vw;
+                position:relative;
+                transition: cubic-bezier(.77,0,.18,1) 1s;
+                padding-top: 5%;
+                a{
+                    text-shadow: 2px 2px black;
+                    color: white;
+                    font-size: 1.2vw;
+                    font-weight: bold;
+                    letter-spacing: 2.5px;
+                    &.hover{
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+            //skal ligge ude pga de to :: og after
+            li::after {
+                content: '';
+                display: block;
+                width: 0;
+                position:absolute;
+                left:50%;
+                height: 2px;
+                background: $highlightColor;
+                transition: cubic-bezier(.77,0,.18,1) 1s;
+            }
+            li:hover::after {
+                width: 80%;
+                left: 10%;
+            }
+    //dropdown        
+            .dropdown {
+                position: relative;
+                li{
+                    top: 43%;
+                    
+                }
+            }
+            .dropdown-content {
+                position: absolute;
+                top: 90%;
+                display: none;
+                left: 10%;
+                a {
+                    color: black;
+                    display: block;
+                    padding-bottom: 2%;
+                    color: white;
+                    font-size: 1vw;
+                    animation: fadeIn 2s ease-out;
+                    
+                    &:hover {
+                        color: $highlightColor;
+                        text-shadow: 1px 1px black;
+
+                    }
+                }
+            }
+            .dropdown:hover .dropdown-content {
+                display: block; 
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+//slider
+#slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+//footer
+footer{
+    background: $secondaryColor;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        font-size: 1.5vw;
+        color: white;
+        padding: 2%;
+    }
+}
