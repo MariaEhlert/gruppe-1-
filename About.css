@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  inset: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+h2 {
+  color: #f2545b;
+  text-shadow: 2px 2px black;
+  font-size: 4vw;
+  padding-bottom: 3%;
+}
+
+#About {
+  background-color: #19323c;
+  margin: 0 auto;
+}
+
+#About #AboutTxt {
+  padding-left: 220px;
+}
+
+#About .flex-box {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+#About #flex-rvs {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+#About .AboutImg {
+  width: 30vw;
+}
+
+#About .flex-box p {
+  width: 40vw;
+  padding: 0px 20px;
+}
+
+#Faciliteter {
+  background-color: #19323c;
+}
+
+#Faciliteter #fac-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Faciliteter #fac-flex .fac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 80px;
+}
+
+#Faciliteter #fac-flex .fac .fac-img {
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  padding-bottom: 10px;
+}
+
+#Faciliteter #fac-flex .fac #face-txt p {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#Faciliteter #fac-flex .fac #fac-txt h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#Faciliteter #fac-flex .fac .AboutBtn {
+  padding: 5px 10px;
+  margin-left: 35px;
+}
+
+#Faciliteter #fac-flex .fac .AboutBtn:active {
+  background-color: black;
+  color: white;
+}
+
+#Faciliteter #txt-fac {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#Faciliteter #txt-fac h2 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  padding-top: 75px;
+}
+/*# sourceMappingURL=About.css.map */
