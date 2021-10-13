@@ -1,41 +1,22 @@
-#Main-background #top-text {
+h2 {
   text-align: center;
-  padding-top: 50px;
 }
 
-#Main-background #top-text h2 {
-  font-size: 48px;
-  padding-bottom: 20px;
+#Main-background #top-text {
+  text-align: center;
 }
 
 #Main-background #top-text p {
-  padding-bottom: 30px;
+  padding-bottom: 5%;
 }
 
 #Main-background .Movie {
-  max-width: 1081px;
+  width: 80%;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 5%;
 }
 
-#Main-background .Movie a {
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  border: 1px solid black;
-}
-
-#Main-background .Movie p {
-  color: white;
-}
-
-#Main-background .hidden-msg {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: none;
-}
-
-#Main-background .flex-Movie {
+#Main-background .Movie .flex-Movie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,161 +27,290 @@
   border-bottom: 2px solid #cfcfcf;
 }
 
-#Main-background .btn:active {
+#Main-background .Movie .flex-Movie .btn {
+  width: 10%;
+}
+
+#Main-background .Movie .flex-Movie .btn:active {
   background-color: black;
   color: white;
 }
 
-#Main-background .hidden-msg.active {
+#Main-background .Movie .hidden-msg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+#Main-background .Movie .hidden-msg.active {
   display: block;
 }
 
-#Payment {
-  max-width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
+#Main-background .Movie .hidden-msg p {
+  color: white;
+  font-size: 1.2vw;
+  padding-bottom: 2%;
 }
 
-#Payment h2 {
-  font-size: 3vw;
-  text-align: center;
+#Main-background .Movie .hidden-msg .billetBtn {
+  padding: 1%;
 }
 
-#Payment figure {
+#Main-background .Movie .hidden-msg .billetBtn:active {
+  background-color: black;
+  color: white;
+}
+
+#Main-background .Movie .hidden-msg .billetBtn a {
+  color: black;
+}
+
+#Main-background .Movie .hidden-msg .billetBtn a:active {
+  color: white;
+}
+
+#test {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 70vw;
-  margin: 0 auto;
-  padding-top: 100px;
-  gap: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vw;
+  margin: 0;
+  color: #fff;
 }
 
-#Payment form {
-  padding-top: 40px;
+#test .movie-container {
+  margin: 20px 0;
+}
+
+#test .movie-container #movie {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+#test .showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#test .showcase li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px;
+}
+
+#test .showcase li small {
+  margin-left: 2px;
+}
+
+#test .showcase .seat {
+  background: #444451;
+  height: 22px;
+  width: 25px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#test .showcase .seat:not(.occupied):hover {
+  cursor: default;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#test .showcase .selected {
+  background: #6feaf6;
+}
+
+#test .showcase .seat.occupied {
+  background: #fff;
+}
+
+#test .container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+#test .container .screen {
+  background: white;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+#test .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#test .container .row .seat {
+  background: #444451;
+  height: 22px;
+  width: 25px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#test .container .row .seat:nth-last-of-type(3) {
+  margin-right: 18px;
+}
+
+#test .container .row .seat:nth-last-of-type(6) {
+  margin-left: 18px;
+}
+
+#test .container .row .seat:not(.occupied):hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#test .container .row .seat.selected {
+  background: #6feaf6;
+}
+
+#test .container .row .occupied {
+  background: #fff;
+}
+
+#test .text {
+  margin: 5px 0;
+}
+
+#test .text span {
+  color: #6feaf6;
+}
+
+#Payment {
+  padding-top: 10%;
+}
+
+#Payment figure {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 9fr 19;
-      grid-template-columns: 1fr 9fr 19;
-      grid-template-areas: "Navn Navn Navn" "Tlf Krtnr Krtnr" "Email CVV Date" "MainBtn MainBtn MainBtn";
-  grid-gap: 5px;
-  width: 50%;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1%;
 }
 
-#Payment .Navn {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: Navn;
+#Payment figure img {
+  width: 100%;
 }
 
-#Payment .Navn #name {
-  width: 33.1vw;
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form {
+  width: 90%;
+  padding-top: 5%;
 }
 
-#Payment .Tlf {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: Tlf;
+#Payment figure figcaption form input {
+  padding-right: 50px;
+  width: 100%;
+  padding: 10px 0 10px;
+  font-size: 1.3vw;
 }
 
-#Payment .Tlf #Telfnumber {
-  width: 12vw;
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form div {
+  padding-bottom: 6%;
 }
 
-#Payment .Krtnr {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: Krtnr;
+#Payment figure figcaption form textarea {
+  width: 100%;
+  padding: 10px 0 50px;
+  font-size: 1.3vw;
 }
 
-#Payment .Krtnr #Kortnumber {
-  width: 20.7vw;
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form ::-webkit-input-placeholder {
+  font-size: 1.3vw;
+  color: black;
 }
 
-#Payment .Email {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: Email;
+#Payment figure figcaption form :-ms-input-placeholder {
+  font-size: 1.3vw;
+  color: black;
 }
 
-#Payment .Email #email {
-  width: 12vw;
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form ::-ms-input-placeholder {
+  font-size: 1.3vw;
+  color: black;
 }
 
-#Payment .CVV {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: CVV;
+#Payment figure figcaption form ::placeholder {
+  font-size: 1.3vw;
+  color: black;
 }
 
-#Payment .CVV #CVVnumber {
-  width: 5.5vw;
-  margin-bottom: 30px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form #grid-two {
+  gap: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
-#Payment .Date {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: Date;
+#Payment figure figcaption form #grid-three {
+  gap: 1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
-#Payment .Date #dato {
-  width: 14.7vw;
-  margin-bottom: 90px;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form .MainBtn {
+  padding: 10px 0 10px;
 }
 
-#Payment .MainBtn {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: MainBtn;
+#Payment figure figcaption form .MainBtn #SndBtn:active {
+  background: black;
+  color: white;
 }
 
-#Payment .MainBtn #SndBtn {
-  width: 33.1vw;
-  padding: 10px 20px;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-  margin-bottom: 20px;
+#Payment figure figcaption form .MainBtn button[type="submit"] {
+  background-color: #ccc;
+  font-size: 1.3vw;
   cursor: pointer;
+  width: 10%;
+  margin-right: 1%;
+  padding: 1%;
+  width: 100%;
 }
 
-#Payment #FlmImg {
-  height: 43vh;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.8);
+#Payment figure figcaption form .error-wrapper {
+  grid-area: error;
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=bestilBillet.css.map */

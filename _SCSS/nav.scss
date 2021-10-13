@@ -24,11 +24,17 @@ body{
         color: $highlightColor;
         text-shadow: 2px 2px black;
         font-size: 4vw;
+        padding-bottom: 3%;
     }
     h3{
         color: $secondaryColor;
         text-shadow: 2px 2px black;
         font-size: 2.5vw;
+    }
+    h4{
+        color: $secondaryColor;
+        text-shadow: 2px 2px black;
+        font-size: 1.5vw;
     }
     h6{
         color: white;
@@ -48,20 +54,20 @@ header{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 90vh;
     
     svg{
         width: 10%;
         z-index: 4;
         position: relative;
-        top: -41%;
+        top: -39%;
         path{
             fill: white;
         }
     }
     // NAV
     .nav-main{
-        z-index: 5;
+        z-index: 1;
         ul{               
             display: flex;
             justify-content: space-between;
@@ -149,7 +155,7 @@ header{
 //slider
 #slider {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
 }
 //footer

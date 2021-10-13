@@ -36,6 +36,11 @@
         #signupbtn{
             width: 50%;
             margin-left: 25%;
+                &:active{
+                    background: black;
+                    color: white;
+                }
+            
         }
         p{
             margin-top: 1%;

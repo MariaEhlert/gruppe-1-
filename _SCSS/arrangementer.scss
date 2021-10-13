@@ -40,7 +40,12 @@
         font-weight: 700;
         &:hover {
             cursor: pointer;
-          }
+        }
+        &:active{
+            background: black;
+            color: white;
+        }
+
     }
     article {
         align-items: center;

@@ -63,6 +63,11 @@
   margin-left: 25%;
 }
 
+#signForm #signUpForm #signupbtn:active {
+  background: black;
+  color: white;
+}
+
 #signForm #signUpForm p {
   margin-top: 1%;
   text-align: center;

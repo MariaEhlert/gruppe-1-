@@ -1,3 +1,4 @@
+//slideshow
 /* OPRETTELSE AF GLOBALE VARIABLER  */
 let i = 0;
 let timer = 3000;  /* ANGIVET I MILLISEKUNDER  */
@@ -37,15 +38,5 @@ window.onload = changeImg();
 
 
 
-//BestilBillet  Accordion
-const btn = document.querySelectorAll(".btn")
-const msg = document.querySelectorAll(".hidden-msg")
- 
-for (let index = 0; index < btn.length; index++) {
-    btn[index].addEventListener("click" , (event) => {
-        event.preventDefault();
-        event.target.parentNode.parentNode.parentNode.querySelector(".hidden-msg").classList.toggle("active")
-    })
- 
- 
-}
+
+
