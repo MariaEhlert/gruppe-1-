@@ -53,6 +53,7 @@ function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
   if(selectedSeats !== null && selectedSeats.length > 0){
     seats.forEach((seat,index) => {
+      //fordi det er et array skal den derfor være -1 
       if(selectedSeats.indexOf(index)> -1){
         seat.classList.add('selected');
       }
