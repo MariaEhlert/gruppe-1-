@@ -170,21 +170,12 @@ footer{
     }
 }
 
-
-
-//COLOR MODS
-$bg-yellow: rgb(102, 81, 38);
-$bg-green: #9c9;
-
-
 //BREAKPOINTS
 $tablet: 980px;
 $mobile: 580px;
 
 @media screen and (max-width: $tablet) {
   body{
-    background-color: $bg-yellow; 
-    //NAV
     header{
         display: grid;
         grid-template-columns: auto; 
@@ -311,8 +302,6 @@ $mobile: 580px;
 }
 @media screen and (max-width: $mobile){
     body{
-    background-color: $bg-green; 
-        //NAV
         header{
             .nav-main{
                 ul{
