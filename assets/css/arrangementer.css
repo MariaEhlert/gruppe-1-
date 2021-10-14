@@ -16,43 +16,45 @@
   padding-top: 15%;
 }
 
+#specialPerformances {
+  height: 70vh;
+}
+
 #specialPerformances h2 {
   text-align: center;
 }
 
-#gridBtn {
+#specialPerformances #gridBtn {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 50vh;
   gap: 3%;
 }
 
-#gridBtn .spBtn {
+#specialPerformances #gridBtn div {
+  height: 50px;
+}
+
+#specialPerformances #gridBtn div .spBtn {
   width: 100%;
   font-size: 1vw;
   padding: 1% 2% 1%;
   font-weight: 700;
 }
 
-#gridBtn .spBtn:hover {
+#specialPerformances #gridBtn div .spBtn:hover {
   cursor: pointer;
 }
 
-#gridBtn .spBtn:active {
+#specialPerformances #gridBtn div .spBtn:active {
   background: black;
   color: white;
 }
 
-#gridBtn article {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
+#specialPerformances .spWrapper {
+  padding: 1% 20%;
   width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=arrangementer.css.map */

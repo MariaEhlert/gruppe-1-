@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/arrangementer.css">
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/event.js" defer></script>
 </head>
 <body>
     <header>
@@ -104,7 +105,7 @@
                         </div> 
                     <li><a href="arrangementer.html">Arrangementer</a></li>
                     <ul class="dropdown">
-                        <li> <a href=""> Om Biograften <i class="fa fa-caret-down"></i> </a></li>
+                        <li> <a href="omBiograf.html"> Om Biograften <i class="fa fa-caret-down"></i> </a></li>
                         <div class="dropdown-content">
                           <a href="#">Faciliteterne</a>
                           <a href="#">Salene</a>
@@ -154,50 +155,26 @@
     <!-- SECTION TWO -->
     <section id="specialPerformances">
         <h2>Special Forestillinger</h2>
-        <section id="gridBtn">
+        <article id="gridBtn">
             <div>
-                <button class="spBtn">BabyBio</button>
-                <article id="babyBio">
-                    <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </article>
+                <button class="spBtn" id="babyBioBtn">BabyBio</button>
             </div>
             <div>
-                <button class="spBtn">SkoleBio</button>
-                <article>
-                    <p class="spText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </article>
+                <button class="spBtn" id="schoolBioBtn">SkoleBio</button>
             </div>
             <div>
-                <button class="spBtn">StrikkeBio</button>
-                <article>
-                    <p class="spText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </article>
+                <button class="spBtn" id="knitBioBtn">StrikkeBio</button>
             </div>
             <div>
-                <button class="spBtn">FødselsdagBio</button>
-                <article>
-                    <p class="spText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </article>
+                <button class="spBtn" id="birthdayBioBtn">FødselsdagsBio</button>
             </div>
-        </section>
+        </article>
+        <article class="spWrapper" id="infoText"></article> 
     </section>
   </main>
   <footer>
       <a href="#"><i class="far fa-copyright"></i> 2021 Gruppe 1</a>
       <a href="#">Jeppe - Maria - Tordis</a>
   </footer>
-  <!-- <script>
-    const spBtn = document.querySelectorAll('.spBtn');  
-    let specialText = document.querySelectorAll('p');
-    for(let element of specialText) {
-        spBtn.onclick = function() {
-            if(element.id === "babyBio") {
-                specialText.innerHTML = ('p');
-            }
-    }
-}
-
-
-  </script> -->
 </body>
 </html>

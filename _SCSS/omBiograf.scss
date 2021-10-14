@@ -1,0 +1,82 @@
+#About{
+    margin: 0 auto;
+ 
+    #AboutTxt{
+        padding-left: 220px;
+    }
+ 
+    .flex-box{
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    #flex-rvs{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    .AboutImg{
+        width: 30vw;
+    }
+ 
+    .flex-box p{
+        width: 40vw;
+        padding: 0px 20px;
+    }
+}
+ 
+ 
+ 
+#Faciliteter{
+ 
+    #fac-flex{
+        display: flex;
+        justify-content: center;
+ 
+        .fac{
+            display: flex;
+            padding: 0px 80px;
+ 
+ 
+            .fac-img{
+                border-radius: 50%;
+                width: 10vw;
+                height: 10vw;
+                padding-bottom: 10px;
+            }
+ 
+ 
+            #face-txt p{
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            
+            #fac-txt h3{
+                text-align: center;
+                padding-bottom: 15px;
+            }
+ 
+            .AboutBtn{
+                padding: 5px 10px;
+                margin-left: 35px;
+ 
+                &:active{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    #txt-fac{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    #txt-fac h2{
+        font-size: 48px;
+        margin-bottom: 25px;
+        padding-top: 75px;
+    }
+}

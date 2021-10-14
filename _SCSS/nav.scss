@@ -110,24 +110,24 @@ header{
                     top: 43%;
                     
                 }
-            }
-            .dropdown-content {
-                position: absolute;
-                top: 90%;
-                display: none;
-                left: 10%;
-                a {
-                    color: black;
-                    display: block;
-                    padding-bottom: 2%;
-                    color: white;
-                    font-size: 1vw;
-                    animation: fadeIn 2s ease-out;
-                    
-                    &:hover {
-                        color: $highlightColor;
-                        text-shadow: 1px 1px black;
-
+                .dropdown-content {
+                    position: absolute;
+                    top: 90%;
+                    display: none;
+                    left: 10%;
+                    a {
+                        color: black;
+                        display: block;
+                        padding-bottom: 2%;
+                        color: white;
+                        font-size: 1vw;
+                        animation: fadeIn 2s ease-out;
+                        
+                        &:hover {
+                            color: $highlightColor;
+                            text-shadow: 1px 1px black;
+                            
+                        }
                     }
                 }
             }
@@ -167,5 +167,108 @@ footer{
         font-size: 1.5vw;
         color: white;
         padding: 2%;
+    }
+}
+
+
+
+//COLOR MODS
+$bg-yellow: rgb(102, 81, 38);
+$bg-green: #9c9;
+
+
+//BREAKPOINTS
+$tablet: 980px;
+$mobile: 580px;
+
+@media screen and (max-width: $tablet) {
+  body{
+    background-color: $bg-yellow; 
+    //NAV
+    header{
+        display: grid;
+        grid-template-columns: auto; 
+        // gap: 1%;
+        svg{
+            top: 0;
+            width: 30%;
+        }
+        .nav-main{
+            margin-top: -400px;
+            ul{
+                display: grid;
+                grid-template-columns: auto; 
+                li::after{
+                    left: 0;
+                } 
+                li:hover::after {
+                    width: 70%;
+                    left: 6%;
+                    
+                }
+                a{
+                    font-size: 2vw;
+                }
+                .dropdown{
+                    li{
+                        top: 0;
+                    }
+                    .dropdown-content{
+                        
+                        top: 50%;
+                        a{
+                            padding-left: 100%;
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }           
+    
+    
+    
+    // FORSIDE/FILM
+    
+    
+    // BESTIL BILLET
+    
+    
+    // TILMELD
+    
+    
+    // ARAANGEMENTER
+    
+    
+    // OM BIOGRAF
+    
+    
+    // KONTAKT
+    
+    
+    
+    }
+}
+@media screen and (max-width: $mobile){
+    body{
+    background-color: $bg-green; 
+    // FORSIDE/FILM
+    
+    
+    // BESTIL BILLET
+
+
+    // TILMELD
+
+
+    // ARAANGEMENTER
+
+
+    // OM BIOGRAF
+
+
+    // KONTAKT
+
+     
     }
 }

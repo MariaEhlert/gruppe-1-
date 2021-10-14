@@ -1,0 +1,90 @@
+#About {
+  margin: 0 auto;
+}
+
+#About #AboutTxt {
+  padding-left: 220px;
+}
+
+#About .flex-box {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+#About #flex-rvs {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+#About .AboutImg {
+  width: 30vw;
+}
+
+#About .flex-box p {
+  width: 40vw;
+  padding: 0px 20px;
+}
+
+#Faciliteter #fac-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Faciliteter #fac-flex .fac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 80px;
+}
+
+#Faciliteter #fac-flex .fac .fac-img {
+  border-radius: 50%;
+  width: 10vw;
+  height: 10vw;
+  padding-bottom: 10px;
+}
+
+#Faciliteter #fac-flex .fac #face-txt p {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#Faciliteter #fac-flex .fac #fac-txt h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#Faciliteter #fac-flex .fac .AboutBtn {
+  padding: 5px 10px;
+  margin-left: 35px;
+}
+
+#Faciliteter #fac-flex .fac .AboutBtn:active {
+  background-color: black;
+  color: white;
+}
+
+#Faciliteter #txt-fac {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#Faciliteter #txt-fac h2 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  padding-top: 75px;
+}
+/*# sourceMappingURL=omBiograf.css.map */

@@ -137,14 +137,14 @@ header .nav-main ul .dropdown li {
   top: 43%;
 }
 
-header .nav-main ul .dropdown-content {
+header .nav-main ul .dropdown .dropdown-content {
   position: absolute;
   top: 90%;
   display: none;
   left: 10%;
 }
 
-header .nav-main ul .dropdown-content a {
+header .nav-main ul .dropdown .dropdown-content a {
   color: black;
   display: block;
   padding-bottom: 2%;
@@ -154,7 +154,7 @@ header .nav-main ul .dropdown-content a {
           animation: fadeIn 2s ease-out;
 }
 
-header .nav-main ul .dropdown-content a:hover {
+header .nav-main ul .dropdown .dropdown-content a:hover {
   color: #f2545b;
   text-shadow: 1px 1px black;
 }
@@ -213,5 +213,56 @@ footer a {
   font-size: 1.5vw;
   color: white;
   padding: 2%;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #665126;
+  }
+  body header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body header svg {
+    top: 0;
+    width: 30%;
+  }
+  body header .nav-main {
+    margin-top: -400px;
+  }
+  body header .nav-main ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body header .nav-main ul li::after {
+    left: 0;
+  }
+  body header .nav-main ul li:hover::after {
+    width: 70%;
+    left: 6%;
+  }
+  body header .nav-main ul a {
+    font-size: 2vw;
+  }
+  body header .nav-main ul .dropdown li {
+    top: 0;
+  }
+  body header .nav-main ul .dropdown .dropdown-content {
+    top: 50%;
+  }
+  body header .nav-main ul .dropdown .dropdown-content a {
+    padding-left: 100%;
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    background-color: #9c9;
+  }
 }
 /*# sourceMappingURL=nav.css.map */
