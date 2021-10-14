@@ -73,11 +73,11 @@
   text-align: center;
 }
 
-#signForm .button-main {
+#signForm #signUpForm .button-main {
   padding: 10px 0 10px;
 }
 
-#signForm .button-main button[type="submit"] {
+#signForm #signUpForm .button-main button[type="submit"] {
   background-color: #ccc;
   font-size: 1.3vw;
   cursor: pointer;

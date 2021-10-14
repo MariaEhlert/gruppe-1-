@@ -60,7 +60,7 @@ header{
         width: 10%;
         z-index: 4;
         position: relative;
-        top: -39%;
+        top: -41%;
         path{
             fill: white;
         }
@@ -188,13 +188,12 @@ $mobile: 580px;
     header{
         display: grid;
         grid-template-columns: auto; 
-        // gap: 1%;
         svg{
             top: 0;
             width: 30%;
         }
         .nav-main{
-            margin-top: -400px;
+            margin-top: -350px;
             ul{
                 display: grid;
                 grid-template-columns: auto; 
@@ -224,51 +223,265 @@ $mobile: 580px;
                 }
             }
         }
+    }
+    //main
+    h2{
+        font-size: 5vw;
+    }
+    h3{
+        font-size: 2.5vw;
+    }
+    h4{
+        font-size: 2vw;
+    }
+    h6{
+        font-size: 2vw;
+    }
+    p{
+        font-size: 2vw;
     }           
-    
-    
-    
     // FORSIDE/FILM
     
     
     // BESTIL BILLET
-    
+    #Main-background{
+        .Movie{
+            .flex-Movie{
+                .btn{
+                    width: 15%;
+                }
+            }
+            .hidden-msg{
+
+                p{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+    #seatSelection{
+        padding-top: 20%;
+    }
+    #Payment{
+        padding-top: 30%;
+    }
     
     // TILMELD
-    
+    #signForm{
+        gap: 2%;
+        #signUpForm{
+            width: 100%;
+        }
+        .switchText{
+            margin-left: 20%;
+        margin-top: -11%;
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
     
     // ARAANGEMENTER
-    
+    #specialPerformances{
+        #gridBtn{
+            div{
+                .spBtn{
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
     
     // OM BIOGRAF
     
     
     // KONTAKT
-    
-    
-    
+    #contactMain{
+        #map{
+            height: 50vh;
+        }
+    }
+
+    //FOOTER
+    footer{
+        a{
+            font-size: 2vw;
+        }
+    }
     }
 }
 @media screen and (max-width: $mobile){
     body{
     background-color: $bg-green; 
+        //NAV
+        header{
+            .nav-main{
+                ul{
+                    a{
+                        font-size: 3vw;
+                    }
+                    .dropdown{
+                        .dropdown-content{
+                            a{
+                                font-size: 2.5vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //main
+        h2{
+            font-size: 6.5vw;
+        }
+        h3{
+            font-size: 3.5vw;
+            text-shadow: 1px 1px black;
+        }
+        h4{
+            font-size: 3vw;
+            text-shadow: 1px 1px black;
+        }
+        h6{
+            font-size: 3vw;
+        }
+        p{
+            font-size: 3vw;
+        } 
     // FORSIDE/FILM
-    
+    #TopMovies{
+        figure{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        figcaption{
+            p{
+            line-height: 4vw;
+            }
+        }
+    }
+    #MovieGrid{
+        #movieWrapper{
+            width: 100%;
+            grid-area: 1%;
+        }
+    }
     
     // BESTIL BILLET
+    #Main-background{
+        .Movie{
+            .flex-Movie{
+                .btn{
+                    width: 20%;
+                }
+            }
+            .hidden-msg{
 
+                p{
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+    #seatSelection{
+        padding-top: 50%;
+    }
+    #Payment{
+        padding-top: 50%;
+        figure{
+            display: grid;
+            grid-template-columns: auto;
+            figcaption{
+                form{
+                    width: 100%;
+                    input{
+                        font-size: 3vw;
+                    }
+                    ::placeholder{
+                        font-size: 3vw;
+                    }
+                    .MainBtn{
+                        button[type="submit"]{
+                            font-size: 3vw;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     // TILMELD
-
+    #signForm{
+        display: grid;
+        grid-template-columns: auto;
+        padding-bottom: 5%;
+        #signUpForm{
+            width: 100%;
+            input{
+                font-size: 3vw;
+            }
+            textarea{
+                font-size: 3vw;
+            }
+            ::placeholder{
+                font-size: 3vw;
+            }
+            #signupbtn{
+                width: 100%;
+                margin-left: 0;
+            }
+            .button-main{
+                button[type="submit"]{
+                    font-size: 3vw;
+                }
+            }
+        }
+        .switchText{
+            margin-left: 20%;
+            margin-top: -8%;
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
 
     // ARAANGEMENTER
-
+    #eventsMain{
+        figure{
+            display: grid;
+            grid-template-columns: auto;
+            gap: 0;
+            .hiddenImg{
+                display: none;
+            }
+        }
+    }
+    #specialPerformances{
+        height: 55vh;
+        #gridBtn{
+            div{
+                .spBtn{
+                    font-size: 2vw;
+                }
+            }
+        }
+        .spWrapper {
+            padding: 1%;
+        }
+    }
 
     // OM BIOGRAF
 
 
     // KONTAKT
-
-     
+    #contactMain{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    //FOOTER
+    footer{
+        a{
+            font-size: 3vw;
+        }
+    }
     }
 }

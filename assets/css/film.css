@@ -117,7 +117,7 @@
 }
 
 #MovieGrid #movieWrapper {
-  max-width: 70%;
+  width: 70%;
   margin: auto;
   display: -ms-grid;
   display: grid;

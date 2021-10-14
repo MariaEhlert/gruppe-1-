@@ -38,7 +38,7 @@ function updateSelectedCount() {
   // [... =beskriver at det er et array og punktummerne konverterer nodeListen
   [...selectedSeats].map(seat =>
   [...seats].indexOf(seat));
-//henter data fra local storage selectedSeats 
+  //gemmer data i local storage selectedSeats 
   localStorage.setItem('selectedSeats', JSON.stringify(seatsIndex));
  
   const selectedSeatsCount = selectedSeats.length;
@@ -49,7 +49,7 @@ function updateSelectedCount() {
 //get data from UI and populate it
  
 function populateUI() {
-  //alle de sæder der bliver valgt gemmes i local storage (den kører igennem JSON.parse)
+  //alle de sæder der bliver valgt hentes fra local storage (den kører igennem JSON.parse)
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));
   if(selectedSeats !== null && selectedSeats.length > 0){
     seats.forEach((seat,index) => {

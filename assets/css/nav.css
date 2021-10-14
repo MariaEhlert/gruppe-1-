@@ -70,7 +70,7 @@ header svg {
   width: 10%;
   z-index: 4;
   position: relative;
-  top: -39%;
+  top: -41%;
 }
 
 header svg path {
@@ -230,7 +230,7 @@ footer a {
     width: 30%;
   }
   body header .nav-main {
-    margin-top: -400px;
+    margin-top: -350px;
   }
   body header .nav-main ul {
     display: -ms-grid;
@@ -258,11 +258,209 @@ footer a {
     padding-left: 100%;
     font-size: 1.5vw;
   }
+  body h2 {
+    font-size: 5vw;
+  }
+  body h3 {
+    font-size: 2.5vw;
+  }
+  body h4 {
+    font-size: 2vw;
+  }
+  body h6 {
+    font-size: 2vw;
+  }
+  body p {
+    font-size: 2vw;
+  }
+  body #Main-background .Movie .flex-Movie .btn {
+    width: 15%;
+  }
+  body #Main-background .Movie .hidden-msg p {
+    font-size: 2vw;
+  }
+  body #seatSelection {
+    padding-top: 20%;
+  }
+  body #Payment {
+    padding-top: 30%;
+  }
+  body #signForm {
+    gap: 2%;
+  }
+  body #signForm #signUpForm {
+    width: 100%;
+  }
+  body #signForm .switchText {
+    margin-left: 20%;
+    margin-top: -11%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #specialPerformances #gridBtn div .spBtn {
+    font-size: 1.5vw;
+  }
+  body #contactMain #map {
+    height: 50vh;
+  }
+  body footer a {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 580px) {
   body {
     background-color: #9c9;
+  }
+  body header .nav-main ul a {
+    font-size: 3vw;
+  }
+  body header .nav-main ul .dropdown .dropdown-content a {
+    font-size: 2.5vw;
+  }
+  body h2 {
+    font-size: 6.5vw;
+  }
+  body h3 {
+    font-size: 3.5vw;
+    text-shadow: 1px 1px black;
+  }
+  body h4 {
+    font-size: 3vw;
+    text-shadow: 1px 1px black;
+  }
+  body h6 {
+    font-size: 3vw;
+  }
+  body p {
+    font-size: 3vw;
+  }
+  body #TopMovies figure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #TopMovies figcaption p {
+    line-height: 4vw;
+  }
+  body #MovieGrid #movieWrapper {
+    width: 100%;
+    -ms-grid-row: 1;
+    grid-area: 1%;
+  }
+  body #Main-background .Movie .flex-Movie .btn {
+    width: 20%;
+  }
+  body #Main-background .Movie .hidden-msg p {
+    font-size: 3vw;
+  }
+  body #seatSelection {
+    padding-top: 50%;
+  }
+  body #Payment {
+    padding-top: 50%;
+  }
+  body #Payment figure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #Payment figure figcaption form {
+    width: 100%;
+  }
+  body #Payment figure figcaption form input {
+    font-size: 3vw;
+  }
+  body #Payment figure figcaption form ::-webkit-input-placeholder {
+    font-size: 3vw;
+  }
+  body #Payment figure figcaption form :-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  body #Payment figure figcaption form ::-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  body #Payment figure figcaption form ::placeholder {
+    font-size: 3vw;
+  }
+  body #Payment figure figcaption form .MainBtn button[type="submit"] {
+    font-size: 3vw;
+    width: 100%;
+  }
+  body #signForm {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding-bottom: 5%;
+  }
+  body #signForm #signUpForm {
+    width: 100%;
+  }
+  body #signForm #signUpForm input {
+    font-size: 3vw;
+  }
+  body #signForm #signUpForm textarea {
+    font-size: 3vw;
+  }
+  body #signForm #signUpForm ::-webkit-input-placeholder {
+    font-size: 3vw;
+  }
+  body #signForm #signUpForm :-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  body #signForm #signUpForm ::-ms-input-placeholder {
+    font-size: 3vw;
+  }
+  body #signForm #signUpForm ::placeholder {
+    font-size: 3vw;
+  }
+  body #signForm #signUpForm #signupbtn {
+    width: 100%;
+    margin-left: 0;
+  }
+  body #signForm #signUpForm .button-main button[type="submit"] {
+    font-size: 3vw;
+  }
+  body #signForm .switchText {
+    margin-left: 20%;
+    margin-top: -8%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body #eventsMain figure {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    gap: 0;
+  }
+  body #eventsMain figure .hiddenImg {
+    display: none;
+  }
+  body #specialPerformances {
+    height: 55vh;
+  }
+  body #specialPerformances #gridBtn div .spBtn {
+    font-size: 2vw;
+  }
+  body #specialPerformances .spWrapper {
+    padding: 1%;
+  }
+  body #contactMain {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body footer a {
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=nav.css.map */
