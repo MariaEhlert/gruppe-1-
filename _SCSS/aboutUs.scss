@@ -1,0 +1,20 @@
+#aboutUs{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2vw;
+    h2{
+        padding-bottom: 0;
+    }
+    figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        img{
+            width: 100%;
+            padding-top: 1%;
+        }
+    }
+}
+#aboutFaciliteter{
+    
+}

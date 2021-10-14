@@ -1,0 +1,25 @@
+#aboutUs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  gap: 2vw;
+}
+
+#aboutUs h2 {
+  padding-bottom: 0;
+}
+
+#aboutUs figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+}
+
+#aboutUs figure img {
+  width: 100%;
+  padding-top: 1%;
+}
+/*# sourceMappingURL=aboutUs.css.map */
